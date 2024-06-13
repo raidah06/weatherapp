@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">To-do-list</h1>
+        <div class="header">
+            <button class="add">add</button>
+      
+            <button class="sort">sort</button>
+        </div>
+        <div id="todo-form" style=display:none>
+            <form action="" id="add-todo">
+                <label for="Project">Project:</label>
+                <select name="Project" id="Title">
+                    <option value="Default">Default Project</option>
+                    <option value="New-Project">Create New Project</option>
+                </select>
+                <label for="Title">Title:</label>
+                <input type="text" id="Title" name="Title">
+                <label for="Description">Description:</label>
+                <input type="text" id="Description"name="Description">
+                <label for="DueDate">Due Date:</label>
+                <input type="date" id="DueDate" name="DueDate">
+                <label for="Priority">Priority:</label>
+                <select name="Priority" id="Priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <label for="Checklilst">Checklist added:</label>\
+                <ul class="todo-ul"></ul>
+            </form>
+            <input type="text" id="add-to-checklist" name="add-to-checklist" placeholder="Type checklist item here">
+            <button class="add-to-checklist">Add item to checklist</button>
+            <br>
+            <button type="submit" class="submit-button">Submit Todo</button>
+            <button type="reset" class="reset-button">Reset Form</button>
+        </div>
+        <div class="projects">
+
+        </div>
+        <div class="todo">
+
+        </div>
+    </div>
+</body>
+</html>

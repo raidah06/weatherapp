@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.content{
+    background-color:rgb(224, 240, 240);
+    display:grid;
+    grid-template:20vh 80vh/25vw 55vw 20vw;
+}
+.title{
+    grid-area: 1/1;
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(154, 190, 190);
+}
+.header{
+    grid-area: 1/2/1/4;
+    display:flex;
+    align-items: center;
+    gap:15px;
+    justify-content: flex-end;
+    background-color: rgb(154, 190, 190)
+}
+button{
+    Padding:15px 25px;
+    margin:15px;
+    border-radius: 25[x];
+    border-color:rgb(154, 190, 190);
+    box-shadow:none;
+    background-color: antiquewhite;
+}
+.projects{
+    grid-area: 2/1;
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(191, 226, 226);
+}
+.todo{
+    grid-area: 2/2;
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 240, 240);
+}
+#todo-form{
+    grid-area:2/3/2/4;
+
+}
+#todo-form>button{
+    padding:10px;
+}
