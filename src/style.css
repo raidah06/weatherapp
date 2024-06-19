@@ -2,12 +2,59 @@ body{
     margin:0;
     padding:0;
 
-    background-color:azure;
+    background-color:rgb(158, 141, 160);
     display:grid;
-    grid-template:15vh 70vh 15vh/10vw 80vw 10vw;
+    grid-template:10vh 70vh 20vh/5vw 90vw 5vw;
 
 }
 
 .title{
+    color:aliceblue;
     grid-area:1/1/2/4;
+
+    margin-left:5vw;
 }
+
+.main-content{
+    padding:20px;
+    background-color: rgb(243, 239, 235);
+    grid-area:2/2/3/3;
+
+    display:grid;
+    grid-template:1fr/1fr 1fr;
+
+    border-radius: 50px;
+    border-color: rgb(151, 221, 209);
+}
+
+.right-side,
+.left-side{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 10px;
+}
+
+.temp-celcius{
+    font-size:120px;
+}
+
+.temp-farenheit{
+    margin-top:0;
+    font-size:18px;
+}
+
+.form{
+    align-self:flex-start;
+}
+
+.country,
+.region{
+    font-size:20px;
+}
+
+.time{
+    margin-top:4px;
+    font-size:15px;
+}
+

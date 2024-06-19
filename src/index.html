@@ -8,25 +8,31 @@
 <body>
   <h2 class="title">WEATHER APP</h2>
   <div class="main-content">
-    <div class="temp-celcius"></div>
-    <div class="country"></div>
-    <div class="region"></div>
-    <div class="time"></div>
-    <div class="form-block">
-        <form class="form" onsubmit="return false">
-          <input
-            type="text"
-            id="search"
-            class="search-box"
-            placeholder="London"
-          />
-          <input
-            type="button"
-            id="searchBtn"
-            value="Search"
-            class="submit-button"
-          />
-        </form>
+    <div class="left-side">
+      <div class="temp-celcius"></div>
+      <div class="temp-farenheit"></div>
+    </div>
+    <div class="right-side">
+    
+          <form class="form" onsubmit="return false">
+            <input
+              type="text"
+              id="search"
+              class="search-box"
+              placeholder="location"
+            />
+            <input
+              type="button"
+              id="searchBtn"
+              value="Search"
+              class="submit-button"
+            />
+          </form>
+          <div class="country"></div>
+          <div class="region"></div>
+          <div class="time"></div>
+          <div class="form-block">
+        </div>
       </div>
   </div>
   <div class="side-content">

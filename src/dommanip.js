@@ -18,12 +18,13 @@ export const domManip= ()=>{
         const weatherObj=await getWeather(locationValue)
         //weather
         const tempCelciusVal=weatherObj.current.temp_c
+        const tempFarenheitVal=weatherObj.current.temp_f
         const countryVal=weatherObj.location.country
         const regionVal=weatherObj.location.region
         const timeVal=weatherObj.current.condition.text
 
         //generates the value
-        generateUIMain(tempCelciusVal,countryVal,regionVal,timeVal)
+        generateUIMain(tempCelciusVal,tempFarenheitVal,countryVal,regionVal,timeVal)
 
         //weatherProcess(lol)
     })
