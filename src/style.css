@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    padding:0;
+
+    background-color:azure;
+    display:grid;
+    grid-template:15vh 70vh 15vh/10vw 80vw 10vw;
+
+}
+
+.title{
+    grid-area:1/1/2/4;
+}
